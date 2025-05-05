@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güneş Gözlüğü | Eylisse Optik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #dddddd;
+            color: #333;
+        }
+
+        header {
+            background-color: #5f5f5f;
+            padding: 20px;
+            text-align: center;
+            color: #ffc000;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            color: #222;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 20px;
+            flex-wrap: wrap;
+        }
+
+        .category-box {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .category-box:hover {
+            transform: scale(1.03);
+        }
+
+        .category-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        .category-label {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 30px;
+        }
+
+        footer {
+            background-color: #f5f5f5;
+            color: #555;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .category-box {
+                width: 90%;
+                height: 300px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="EYLISSE.gif" alt="Eylisse Logo">
+        </a>
+        <h1>Güneş Gözlükleri</h1>
+    </header>
+
+    <section class="hero">
+        <h1>Stiline Uygun Gözlüğü Keşfet</h1>
+        <p>Modern tasarımlar, zarif çizgiler ve maksimum koruma ile hazırlanmış koleksiyonumuzla tanışın.</p>
+    </section>
+
+    <section class="categories">
+        <a href="kadin-gozluk.html" class="category-box">
+            <img src="kadin.jpg" alt="Kadın Gözlükleri">
+            <div class="category-label">Kadın</div>
+        </a>
+
+        <a href="erkek-gozluk.html" class="category-box">
+            <img src="erkek.jpg" alt="Erkek Gözlükleri">
+            <div class="category-label">Erkek</div>
+        </a>
+    </section>
+
+    <footer>
+        © 2025 Eylisse Optik | Tüm hakları saklıdır.
+    </footer>
+
+</body>
+
+</html>

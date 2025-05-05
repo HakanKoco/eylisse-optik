@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim | Eylisse Optik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dddddd;
+        }
+
+        header {
+            background-color: #5f5f5f;
+            color: #ffc000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Logo kısmı */
+        .logo {
+            text-align: left;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            align-items: center;
+        }
+
+        .cart-item img {
+            height: 100px;
+            width: auto;
+            border-radius: 5px;
+        }
+
+        .cart-item .item-details {
+            flex: 1;
+            margin-left: 15px;
+        }
+
+        .cart-item .item-details h3 {
+            margin: 5px 0;
+        }
+
+        .cart-item .item-details p {
+            color: #888;
+            margin: 0;
+        }
+
+        .cart-item .item-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .total {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .total span {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .checkout-btn {
+            background-color: #ffc000;
+            color: #333;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .checkout-btn:hover {
+            background-color: #FFDE59;
+        }
+
+        .logout {
+            text-align: right;
+            margin-top: 30px;
+        }
+
+        .logout a {
+            color: #e74c3c;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .logout a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo kısmı -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="EYLISSE.gif" alt="Eylisse Optik Logo">
+        </a>
+        <h1>Sepetim</h1>
+    </header>
+
+    <!-- Sepetim Bilgileri kısmı -->
+    <div class="container">
+        <h2>Sepetinizdeki Ürünler</h2>
+
+        <!-- Sepet Öğeleri -->
+        <div class="cart-item">
+            <img src="gunes-gozlugu.jpg" alt="Güneş Gözlüğü">
+            <div class="item-details">
+                <h3>Güneş Gözlüğü</h3>
+                <p>Model: Eylisse 2025</p>
+                <p>Renk: Siyah</p>
+            </div>
+            <div class="item-price">₺120,00</div>
+        </div>
+
+        <div class="cart-item">
+            <img src="lens.jpg" alt="Lens">
+            <div class="item-details">
+                <h3>Lens</h3>
+                <p>Model: Eylisse Lens 1</p>
+                <p>Renk: Mavi</p>
+            </div>
+            <div class="item-price">₺90,00</div>
+        </div>
+
+        <!-- Toplam Fiyat -->
+        <div class="total">
+            <span>Toplam: ₺210,00</span>
+        </div>
+
+        <button class="checkout-btn">Ödeme Yap</button>
+
+        <!-- Çıkış kısmı -->
+        <div class="logout">
+            <a href="index.html">Çıkış Yap</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
